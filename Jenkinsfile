@@ -61,18 +61,18 @@ pipeline {
               success {
                   echo 'Successfully Cloned Repository'
 
-                  mail  to: 'Kimchangkyu99@gmail.com',
-                        subject: "Deploy Frontend Success",
-                        body: "Successfully deployed frontend!"
+                  // mail  to: 'Kimchangkyu99@gmail.com',
+                  //       subject: "Deploy Frontend Success",
+                  //       body: "Successfully deployed frontend!"
 
               }
 
               failure {
                   echo 'I failed :('
 
-                  mail  to: 'Kimchangkyu99@gmail.com',
-                        subject: "Failed Pipelinee",
-                        body: "Something is wrong with deploy frontend"
+                  // mail  to: 'Kimchangkyu99@gmail.com',
+                  //       subject: "Failed Pipelinee",
+                  //       body: "Something is wrong with deploy frontend"
               }
           }
         }
@@ -149,9 +149,9 @@ pipeline {
 
           post {
             success {
-              mail  to: 'Kimchangkyu99@gmail.com',
-                    subject: "Deploy Success",
-                    body: "Successfully deployed!"
+              // mail  to: 'Kimchangkyu99@gmail.com',
+              //       subject: "Deploy Success",
+              //       body: "Successfully deployed!"
                   
             }
           }
