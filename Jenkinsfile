@@ -94,6 +94,14 @@ pipeline {
                   '''
               }
             }
+            post {
+              success {
+                  echo 'Successfully Lint Backend'
+              }
+              failure {
+                  echo 'I failed :('
+              }
+            }
         }
         
         stage('Test Backend') {
