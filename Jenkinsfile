@@ -149,6 +149,7 @@ pipeline {
 
           post {
             success {
+              echo 'Successfully Build Backend'
               // mail  to: 'Kimchangkyu99@gmail.com',
               //       subject: "Deploy Success",
               //       body: "Successfully deployed!"
